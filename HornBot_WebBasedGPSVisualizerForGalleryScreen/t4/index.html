@@ -1,0 +1,189 @@
+
+<html>
+<head>
+<title>Hornbot Tracker</title>
+
+<META HTTP-EQUIV="CACHE-CONTROL" CONTENT="NO-CACHE">
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+<script type="text/javascript" src="hornbot.js"></script>
+
+
+</head>
+<body bgcolor="#401f0e" onLoad="startUp()">
+<center>
+<table border=0 width=320>
+<tr>
+<th style="background-color:#d74d1e;">HORNBOT TRACKER</th><th style="background-color:#d74d1e;"><div id="stepnum">Step 0/4</div></th>
+</tr>
+<tr>
+<td colspan=2 style="background-color:#f19f67;">
+<hr>
+
+<!-- STEP 0: INTRODUCTORY PAGE -->
+<div id="step0">
+Welcome, Dana and friends. The following web-based software program lets you track and record GPS data for the HornBot sculpture. 
+<br><br>
+This program comprises four steps.
+<ol>
+<li>Choose a title for the "performance" you are about to track
+<li>Start tracking/recording gps-related data for your performance
+<li>Pause tracking/recording gps-related data for your performance
+<li>Return to the opening page to record another performance
+</ol> 
+</div>
+
+<!-- STEP 1: SUBMIT PERFORMANCE TITLE FOR TRACKING SESSION -->
+<div id="step1">
+
+Choose a title for the "performance" you are about to track. 
+<br><br><center>
+<input type="text" name="field1" id="field1">
+</center><br>
+* When you click the button below, you will be asked if your browser can track your location. You will need to agree to this in order to proceed. 
+</div>
+
+<!-- STEP 2: START TRACKING!-->
+<div id="step2a">
+The title for this performance has been recorded. Now, it's time to start tracking your session. 
+<br><center><br>
+<div id="latlon">LOADING</div>
+<div id="gps-map">LOADING</div>
+
+<div id="step2b">
+<br></center>You should be located at the center of this map. After you click the button below, the lat/long and image will update every second, recording your position for a future HornBot performance.</center>
+</div></div>
+
+
+<!-- STEP 3: START TRACKING!-->
+<div id="step3"><center>TRACKING in PROGRESS<br><br></div>
+<div id="latlon2">LOADING</div>
+<div id="gps-map2">LOADING</div>
+<div id="stopwatch">LOADING</div>
+</div>
+<!-- STEP 4: STOP TRACKING!-->
+<div id="step4"><center><br><br><b>TRACKING STOPPED<br><br>PERFORMANCE RECORDED</b><br><br><br></div>
+<hr>
+</td>
+</tr>
+<tr>
+<td colspan=2 style="background-color:#d74d1e;">
+
+<!-- STEP 0: INTRODUCTORY PAGE -->
+<div id="todo0"><center><br>If you are ready to start<br><input type="button" value="CLICK HERE" onClick="updateStep(1);"><br><br></center></div>
+
+<!-- STEP 1: RECORD A TITLE FOR YOUR PERFORMANCE -->
+<div id="todo1"><center><br><input type="button" id="step1" value="CLICK HERE"><br>to use this performance name<br><br></center></div>
+
+<!-- STEP 2: BEGIN TRACKING PAGE -->
+<div id="todo2"><center><br>When you are ready...<br><input type="button" id="tracker" value="BEGIN TRACKING" onClick="updateStep(3)"><br><br></center></div>
+
+<!-- STEP 3: STOP AND FINISH TRACKING -->
+<div id="todo3"><center><br><input type="button" id="step3" value="STOP AND FINISH" onClick="updateStep(4)"><br><br><br></center></div>
+
+<!-- STEP 4: RETURN TO INTRODUCTORY PAGE -->
+<div id="todo4"><center><br>To record another performance<br><input type="button" value="RESTART" onClick="window.location.reload()"><br><br></center></div>
+
+</td>
+
+</tr>
+</table>
+
+<br><br>
+<!--
+<input type="text" name="field2" id="field2">
+<input type="button" value="Submit" id="send2">
+//-->
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
